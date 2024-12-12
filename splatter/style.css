@@ -1,0 +1,103 @@
+body {
+    font-size: 14px;
+    color: purple;
+    font-family: "Times New Roman";
+    line-height: 0px;
+    text-align: center;
+    background-color: black;
+}
+
+h1 {
+    filter: drop-shadow(0 0 1rem green);
+}
+
+redshadow {
+    filter: drop-shadow(0 0 1rem red);
+}
+
+h2 {
+    font-size: 64px;
+    line-height: 50px;
+    animation: color-change .2s infinite;
+}
+
+h3 {
+    font-size: 32px;
+    line-height: 30px;
+    animation: color-change .2s infinite;
+}
+
+h4 {
+    font-size: 38px;
+    line-height: 40px;
+    color: white;
+}
+
+h5 {
+    font-size: 14px;
+    line-height: 15px;
+    color: white;
+}
+
+gre {
+    font-size: 64px;
+    line-height: 30px;
+    color: green;
+}
+
+ulw {
+    font-size: 32px;
+    text-decoration: underline;
+    color: white;
+}
+
+slw {
+    font-size: 14px;
+    text-decoration: underline;
+    color: white;
+}
+
+whi {
+    font-size: 22px;
+    line-height: 10px;
+    color: white;
+}
+
+
+blinky {
+    animation: blinky 9s infinite;
+}
+
+blinky2 {
+    font-size: 24px;
+    line-height: 20px;
+    color: white;
+    animation: blinky2 9s infinite;
+}
+
+@keyframes color-change {
+    0% { color: #ff1a1a; }
+    50% { color: #660000; }
+    100% { color: #ff1a1a; }
+}
+
+
+@keyframes blinky {
+    0% { opacity: 0; }
+    50% { opacity: 0.2; }
+    100% { opacity: 1; }
+}
+
+@keyframes blinky2 {
+    0% { opacity: 0; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

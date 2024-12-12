@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>goat hell</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" href="goat.jpg" type="favicon/ico" />
+	<style>
+	body, html {
+ 	 height: 100%;
+ 	 margin: 0;
+	}
+	.bg {
+	 animation: inverted-goat 0.5s;
+	 animation-iteration-count: infinite;
+ 	 background-image: url("goat.jpg");
+	 height: 100%; 
+	 background-position: center;
+	 background-repeat: no-repeat;
+	 background-size: 100% 100%;
+	}
+	.bg2 {
+	 animation: blink 0.4s;
+	 animation-iteration-count: infinite;
+ 	 background-image: url("goat.jpg");
+	 transform: scaleX(-1);
+	 filter: invert(200%);
+	 height: 100%; 
+	 background-position: center;
+	 background-repeat: no-repeat;
+	 background-size: 100% 100%;
+	}
+	.txt {
+	 animation: blink 1s;
+	 animation-iteration-count: infinite;
+ 	 background-image: url("hell.png");
+	 transform: scaleX(-1);
+	 filter: invert(100%);
+	 height: 100%; 
+	 background-position: center;
+	 background-repeat: no-repeat;
+	 background-size: 100% 100%;
+	}
+	@keyframes blink {
+		0% {
+		opacity: 1;
+		}
+		50% {
+		opacity: 0;
+		}
+		100% {
+		opacity: 1;
+		}
+	}
+	@keyframes inverted-goat {
+		0% {
+		 filter: contrast(100%);
+		}
+		50% {
+		 filter: contrast(800%);
+		}
+		100% {
+		 filter: contrast(100%);
+		}
+	}
+</style>
+</head>
+
+<body>
+	<div class="bg">
+	<div class="bg2">
+	<div class="txt">
+	</div>
+	</div>
+	</div>
+	<audio src="goatnoises.mp3" autoplay loop></audio>
+</body>
+</html>
+

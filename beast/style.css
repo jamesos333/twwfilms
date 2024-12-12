@@ -1,0 +1,47 @@
+body {
+    font-size: 14px;
+    color: purple;
+    font-family: "Times New Roman";
+    line-height: 0px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 64px;
+    line-height: 60px;
+    color: red;
+}
+
+h2 {
+    filter: drop-shadow(0 0 1rem red);
+}
+
+a {
+    color: white;
+    font-size: 46px; 
+    line-height: 40px;
+    text-decoration: none;
+}
+
+a:hover {
+    animation: color-change .2s infinite;
+}
+
+@keyframes color-change {
+    0% { color: #ff1a1a; }
+    50% { color: #660000; }
+    100% { color: #ff1a1a; }
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.blood {
+    color: #fff;
+	text-shadow: 0px -1px 4px white, 0px -2px 10px yellow, 0px -10px 20px #ff8000, 0px -18px 40px red;
+}
